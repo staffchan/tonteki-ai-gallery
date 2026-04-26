@@ -303,14 +303,11 @@ footer {
 
 @media (max-width: 480px) {
     .hero {
-        padding: 160px 15px 60px; /* 左右の余白を少し広げる */
+        padding: 160px 20px 60px;
     }
     .hero-title {
-        font-size: 1.9rem;
-        letter-spacing: -0.04em;
-    }
-    .hero-title .gradient-text {
-        white-space: nowrap; /* 強制的に1行にする */
+        font-size: 2.3rem;
+        letter-spacing: -0.02em;
     }
     .nav-links {
         display: none;
