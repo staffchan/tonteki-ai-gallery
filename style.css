@@ -82,6 +82,15 @@ nav {
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.mobile-break {
+    display: none;
+}
+
+.hidden {
+    display: none !important;
 }
 
 .nav-links {
@@ -295,8 +304,38 @@ footer {
     header {
         padding: 0 20px;
     }
+    .logo h1 {
+        font-size: 1.2rem;
+    }
     .detail-layout {
         flex-direction: column;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    .gallery-section {
+        padding: 20px 12px 80px;
+    }
+    .card-info h3 {
+        font-size: 0.9rem;
+    }
+    .card-overlay {
+        padding: 12px;
+    }
+    input, select, textarea {
+        font-size: 16px !important;
+    }
+}
+
+/* スマホ縦向き専用の調整 */
+@media (max-width: 480px) {
+    .logo {
+        align-items: flex-start;
+        padding-top: 4px;
+    }
+    .mobile-break {
+        display: block;
     }
 }
 

@@ -181,9 +181,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateNavActions() {
         if (isLoggedIn()) {
-            if (logoutBtn) logoutBtn.style.display = 'inline-block';
+            if (logoutBtn) logoutBtn.classList.remove('hidden');
         } else {
-            if (logoutBtn) logoutBtn.style.display = 'none';
+            if (logoutBtn) logoutBtn.classList.add('hidden');
         }
     }
 
